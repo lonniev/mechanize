@@ -17,6 +17,6 @@
 # limitations under the License.
 #
 
-chef_gem "mechanize" do
-  compile_time false
-end
+include_recipe 'build-essential::default'
+
+chef_gem 'mechanize'
