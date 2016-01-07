@@ -17,6 +17,7 @@
 # limitations under the License.
 #
 
-include_recipe 'build-essential::default'
+# pull in build-essentials and nokogiri into Ruby/Chef's context now
+include_recipe 'xml::ruby'
 
 chef_gem 'mechanize'
