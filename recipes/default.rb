@@ -20,4 +20,6 @@
 # pull in build-essentials and nokogiri into Ruby/Chef's context now
 include_recipe 'xml::ruby'
 
-chef_gem 'mechanize'
+chef_gem 'mechanize' do
+  compile_time true
+end
